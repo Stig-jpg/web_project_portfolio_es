@@ -1,14 +1,15 @@
 .header {
-  background-color: #1e1e1e;
   display: flex;
-
   font-family: "ArchivoBlack", Arial, sans-serif;
   flex-direction: column;
   padding: 90px 120px 0;
+  z-index: -2;
+  overflow: hidden;
 }
 
 .header__container {
   display: grid;
+  max-width: 1440px;
   grid-template-columns: 1fr auto;
   grid-template-rows: repeat(4, auto);
   grid-template-areas:
@@ -23,8 +24,8 @@
 }
 
 .header__profile-pic {
-  height: 500px;
-  width: 387px;
+  max-height: 500px;
+  max-width: 387px;
   align-self: flex-end;
   /* padding: 40px 0px 100px 20px; */
   /* position: absolute; */
@@ -32,9 +33,10 @@
 
 .header__title {
   font-family: "ArchivoBlack", serif, sans-serif;
-  font-size: 72px;
+  font-size: 4.5rem;
   font-weight: normal;
   margin: 0;
+  max-width: 790px;
   padding-bottom: 15px;
   color: white;
   grid-area: title;
@@ -43,11 +45,25 @@
 .header__subheading {
   font-family: "OpenSans", serif, sans-serif;
   font-size: 18px;
+  max-width: 790px;
   font-weight: normal;
   margin: 0;
   color: white;
   opacity: 50%;
   grid-area: subheading;
+}
+
+.circle--header {
+  background-color: #6d6dff;
+  position: absolute;
+  grid-area: photo;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(120px);
+}
+
+.header__subheading--break {
+  display: none;
 }
 
 .header__description {
@@ -58,7 +74,7 @@
   grid-area: description;
 }
 
-.header__container {
+.container {
   grid-area: nav;
 }
 
@@ -66,20 +82,21 @@
   font-size: 40px;
   max-width: 100%;
   padding-top: 110px;
-  padding-bottom: 50px;
   grid-area: none;
 }
 
 .header__icon-container {
+  padding: 40px 0 100px 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   gap: 120px;
+  justify-content: space-between;
 }
 
 .header__icon {
-  height: 57px;
-  width: 50px;
+  max-height: 57px;
+  max-width: 50px;
+  align-self: flex-start;
 }
 
 @media screen and (max-width: 1023px) {
@@ -89,12 +106,18 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 40px 40px 40px 40px;
+  }
+  .header__subheading--division {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 320px) {
   .header {
-    max-width: 100%;
+    max-width: 100vw;
   }
   .header__container {
     grid-template-columns: 1fr;
@@ -103,6 +126,9 @@
       "photo",
       "title",
       "subheading" "description" "nav";
-    max-width: 100%;
+    max-width: 320px;
+  }
+  .header__title {
+    font-size: 2.25rem;
   }
 }

@@ -1,0 +1,80 @@
+.main {
+  margin: 0;
+  padding: 0 120px;
+}
+
+.main__title {
+  font-family: "ArchivoBlack";
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.main__projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 590px;
+  column-gap: 20px;
+  row-gap: 0;
+}
+
+.main__project-card {
+  display: grid;
+  background-color: #1c1c1c;
+  max-width: 590px;
+}
+
+.main__project-card__thumbnail {
+  width: 590px;
+  height: 330px;
+  grid-area: 1 / 1;
+  aspect-ratio: 16 / 9;
+}
+
+.main__project-card__icons {
+  grid-area: 1 / 1;
+  display: grid;
+  align-items: end;
+  align-content: end;
+  grid-template-rows: 40px;
+  grid-template-columns: 40px 40px;
+  gap: 10px;
+}
+
+.main__project-card__icon {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+}
+
+.main__project-card__textbox {
+  color: white;
+  font-family: "OpenSans";
+  margin: 0;
+  max-width: 590px;
+  min-height: 340px;
+  padding: 30px;
+}
+
+.main__project-card__title {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.main__project-card__description {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Ellipse 75 */
+.ellipse {
+  /* position: absolute; */
+  width: 300px;
+  height: 300px;
+  /* left: calc(50% - 300px / 2); */
+  /* top: 2167px; */
+
+  background: #6d6dff;
+  filter: blur(200px);
+}

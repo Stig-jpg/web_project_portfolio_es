@@ -8,7 +8,7 @@
     <title>Fernando Godinez's Portfolio</title>
   </head>
 
-  <body>
+  <body class="body">
     <header class="header">
       <div class="header__container">
         <h1 class="header__title">Fernando<br />Godínez</h1>
@@ -19,8 +19,12 @@
             alt="Foto de perfil del Desarrollador"
           />
         </div>
+        <div class="circle--header"></div>
         <h2 class="header__subheading">
-          Desarrollador Full-Stack Junior | TypeScript, React, Node.js
+          Desarrollador Full-Stack Junior
+          <span class="header__subheading--division">|</span>
+          <br class="header__subheading--break" disable />TypeScript, React,
+          Node.js
         </h2>
         <p class="header__description">
           Desarrollador web junior con experiencia práctica creando interfaces
@@ -76,12 +80,53 @@
         </div>
       </div>
     </header>
+    <main class="main">
+      <h4 class="main__title">Proyectos Destacados</h4>
 
-    <main>
-      <h4>Proyectos Destacados</h4>
-      <div class="projects">
-        <div class="project-card"></div>
-        <div class="project-card"></div>
+      <div class="main__projects">
+        <div class="main__project-card">
+          <img
+            src="/images/cofeeshop_project_img_compressed.png"
+            alt="Proyecto de cafetería"
+            class="main__project-card__thumbnail"
+          />
+          <div class="main__project-card__icons">
+            <img
+              src="./images/html5_compressed.svg"
+              alt="Logo de HTML5"
+              class="main__project-card__icon"
+            />
+            <img
+              src="./images/css3_compressed.svg"
+              alt="Logo de CSS3"
+              class="main__project-card__icon"
+            />
+          </div>
+          <div class="main__project-card__textbox">
+            <h4 class="main__project-card__title">
+              Página web de una cafetería
+            </h4>
+            <p class="main__project-card__description">
+              Desarrollo de una landing page responsiva para una cafetería
+              siguiendo un brief de diseño. Incluye estructura semántica,
+              maquetación con Flexbox, creación de secciones nuevas y un
+              formulario de contacto funcional.<br />Logro: Implementé desde
+              cero el diseño completo de la página, organicé el proyecto con
+              buenas prácticas y publiqué la versión final utilizando GitHub
+              Pages.
+            </p>
+            <div class="main__card-links">
+              <a href="#" class="main__card-link">Demo en vivo</a>
+              <a href="#" class="main__card-link">Github</a>
+            </div>
+          </div>
+        </div>
+        <div class="main__project-card">
+          <img
+            src="./images/project_img_compressed.png"
+            alt="Imagen temporal de proyecto"
+          />
+        </div>
       </div>
     </main>
 
@@ -93,6 +138,7 @@
         <a href=""></a>
         <a href=""></a>
       </div>
+      <div class="elipse"></div>
     </footer>
   </body>
 </html>
