@@ -1,0 +1,33 @@
+.footer {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__title {
+  font-family: "ArchivoBlack";
+  color: white;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 100px 0 0 0;
+  padding: 0;
+}
+
+.footer__email {
+  font-family: "OpenSans";
+  align-self: center;
+  color: #6d6dff;
+  font-size: 18px;
+}
+
+.footer__social-media-icons {
+  display: flex;
+  gap: 80px;
+  padding-bottom: 100px;
+  padding-top: 20px;
+}
+
+.footer__social-link {
+  display: flex;
+}

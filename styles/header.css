@@ -5,6 +5,7 @@
   padding: 90px 120px 0;
   z-index: -2;
   overflow: hidden;
+  max-width: 100vw;
 }
 
 .header__container {
@@ -70,12 +71,32 @@
   color: white;
   font-family: "OpenSans", sans-serif;
   max-width: 793px;
+  max-height: 150px;
   font-size: 18px;
+  line-height: 1.5;
   grid-area: description;
 }
 
-.container {
+.header__nav {
   grid-area: nav;
+  display: flex;
+  gap: 30px;
+  font-family: "OpenSans";
+  font-weight: 600;
+  line-height: 1.5;
+  padding-top: 30px;
+}
+
+.header__nav-link {
+  font-family: "OpenSans", sans-serif;
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header__nav-link:hover {
+  opacity: 0.6;
 }
 
 .header__title--icons {
