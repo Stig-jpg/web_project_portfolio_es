@@ -11,40 +11,42 @@
   <body class="body">
     <header class="header">
       <div class="header__container">
-        <h1 class="header__title">Fernando<br />Godínez</h1>
+        <div class="header__info">
+          <h1 class="header__title">Fernando<br />Godínez</h1>
+          <h2 class="header__subheading">
+            Desarrollador Full-Stack Junior
+            <span class="header__subheading--division">|</span>
+            <br class="header__subheading--break" />TypeScript, React, Node.js
+          </h2>
+          <p class="header__description">
+            Desarrollador web junior con experiencia práctica creando interfaces
+            limpias y responsivas con HTML, CSS, JavaScript y React, así como
+            implementando lógica básica de back-end. Ha trabajado en proyectos
+            formativos que siguen procesos reales de desarrollo, usando Git,
+            GitHub y Figma. Disfruto colaborar en equipo, mantener un código
+            claro y resolver problemas de forma estructurada. Motivado por
+            seguir aprendiendo, asumir nuevos retos y aprovechar oportunidades
+            para crecer como desarrollador.
+          </p>
+          <div class="header__nav">
+            <a href="#header" class="header__nav-link">Descarga CV</a>
+            <a href="https://github.com/Stig-jpg" class="header__nav-link"
+              >Enlace a Github</a
+            >
+            <a href="#footer" class="header__nav-link">Hablemos</a>
+          </div>
+        </div>
+
         <div class="header__image-container">
+          <div class="header__circle-glow"></div>
           <img
             src="./images/portfolio_dev_photo_compressed.jpeg"
             class="header__profile-pic"
             alt="Foto de perfil del Desarrollador"
           />
         </div>
-        <div class="circle--header"></div>
-        <h2 class="header__subheading">
-          Desarrollador Full-Stack Junior
-          <span class="header__subheading--division">|</span>
-          <br class="header__subheading--break" disable />TypeScript, React,
-          Node.js
-        </h2>
-        <p class="header__description">
-          Desarrollador web junior con experiencia práctica creando interfaces
-          limpias y responsivas con HTML, CSS, JavaScript y React, así como
-          implementando lógica básica de back-end. Ha trabajado en proyectos
-          formativos que siguen procesos reales de desarrollo, usando Git,
-          GitHub y Figma. Disfruto colaborar en equipo, mantener un código claro
-          y resolver problemas de forma estructurada. Motivado por seguir
-          aprendiendo, asumir nuevos retos y aprovechar oportunidades para
-          crecer como desarrollador.
-        </p>
-        <div class="header__nav">
-          <a href="#header" class="header__nav-link">Descarga CV</a>
-          <a href="https://github.com/Stig-jpg" class="header__nav-link"
-            >Enlace a Github</a
-          >
-          <a href="#header" class="header__nav-link">Hablemos</a>
-        </div>
       </div>
-      <div class="header__skils">
+      <section class="header__skils">
         <h3 class="header__title header__title--icons">
           Habilidades y herramientas
         </h3>
@@ -80,31 +82,33 @@
             class="header__icon"
           />
         </div>
-      </div>
+      </section>
     </header>
     <main class="main">
       <h4 class="main__title">Proyectos Destacados</h4>
 
       <div class="main__projects">
         <div class="main__project-card">
-          <img
-            src="/images/cofeeshop_project_img_compressed.png"
-            alt="Proyecto de cafetería"
-            class="main__project-card__thumbnail"
-          />
-
-          <div class="main__project-card__icons">
+          <div class="main__thumbnail-wrapper">
             <img
-              src="./images/html5_compressed.svg"
-              alt="Logo de HTML5"
-              class="main__project-card__icon"
+              src="/images/cofeeshop_project_img_compressed.png"
+              alt="Proyecto de cafetería"
+              class="main__project-card__thumbnail"
             />
-            <img
-              src="./images/css3_compressed.svg"
-              alt="Logo de CSS3"
-              class="main__project-card__icon"
-            />
+            <div class="main__project-card__icons">
+              <img
+                src="./images/html5_compressed.svg"
+                alt="Logo de HTML5"
+                class="main__project-card__icon"
+              />
+              <img
+                src="./images/css3_compressed.svg"
+                alt="Logo de CSS3"
+                class="main__project-card__icon"
+              />
+            </div>
           </div>
+
           <div class="main__project-card__textbox">
             <h4 class="main__project-card__title">
               Página web de una cafetería
@@ -146,27 +150,30 @@
         </div>
 
         <div class="main__project-card">
-          <img
-            src="./images/project_img_compressed.png"
-            alt="Proyecto"
-            class="main__project-card__thumbnail"
-          />
-          <div class="main__project-card__icons">
+          <div class="main__thumbnail-wrapper">
             <img
-              src="./images/js_logo_compressed.svg"
-              alt="Logo de JavaScript"
-              class="main__project-card__icon"
+              src="/images/project_img_compressed.png"
+              alt="Proyecto"
+              class="main__project-card__thumbnail"
             />
-            <img
-              src="./images/react_logo_compressed.svg"
-              alt="Logo de React"
-              class="main__project-card__icon"
-            />
+            <div class="main__project-card__icons">
+              <img
+                src="./images/js_logo_compressed.svg"
+                alt="Logo de HTML5"
+                class="main__project-card__icon"
+              />
+              <img
+                src="./images/react_logo_compressed.svg"
+                alt="Logo de React"
+                class="main__project-card__icon"
+              />
+            </div>
           </div>
+
           <div class="main__project-card__textbox">
-            <h4 class="main__project-card__title">Mi proyecto</h4>
+            <h4 class="main__project-card__title">Mi Proyecto</h4>
             <p class="main__project-card__description">
-              Descripción del proyecto.
+              Descripción del proyecto
             </p>
             <div class="main__card-links">
               <a
@@ -199,9 +206,13 @@
 
     <footer class="footer">
       <h5 class="footer__title">Contacto</h5>
+      <div class="footer__circle-glow"></div>
       <p class="footer__email">fernandogodinezmtz@gmail.com</p>
       <div class="footer__social-media-icons">
-        <a href="./index.html" class="footer__social-link">
+        <a
+          href="www.linkedin.com/in/fernando-godinez-453443196"
+          class="footer__social-link"
+        >
           <img
             src="./images/linkedin_logo_compressed.png"
             alt="Logo de LinkedIn"
