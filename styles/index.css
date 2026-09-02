@@ -1,14 +1,28 @@
-/* Import all css files */
+/* Stylesheet imports */
 @import url(../vendor/normalize.css);
 @import url(./header.css);
 @import url(./main.css);
 @import url(./footer.css);
 
+/* Global page styles */
+html,
+.body {
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 .body {
   background-color: #1e1e1e;
 }
 
-/* ArchivoBlack normal font style */
+/* Archivo Black font */
 @font-face {
   font-family: "ArchivoBlack";
   src:
@@ -19,7 +33,7 @@
   font-display: swap;
 }
 
-/* OpenSans normal font style */
+/* Open Sans regular font */
 @font-face {
   font-family: "OpenSans";
   src:
@@ -30,7 +44,7 @@
   font-display: swap;
 }
 
-/* OpenSans bold font style */
+/* Open Sans bold font */
 @font-face {
   font-family: "OpenSans Bold";
   src:
@@ -41,7 +55,7 @@
   font-display: swap;
 }
 
-/* OpenSans semibold font style */
+/* Open Sans semibold font */
 @font-face {
   font-family: "OpenSans SemiBold";
   src:

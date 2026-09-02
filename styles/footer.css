@@ -1,3 +1,4 @@
+/* Footer layout */
 .footer {
   max-width: 100%;
   display: flex;
@@ -5,6 +6,7 @@
   align-items: center;
 }
 
+/* Contact information */
 .footer__title {
   font-family: "ArchivoBlack";
   color: white;
@@ -31,6 +33,7 @@
   font-size: 18px;
 }
 
+/* Social media links */
 .footer__social-media-icons {
   display: flex;
   gap: 80px;
@@ -44,4 +47,20 @@
 
 .footer__social-link:hover {
   opacity: 0.5;
+}
+
+/* Mobile layout */
+@media screen and (max-width: 320px) {
+  .footer__title {
+    font-size: 28px;
+  }
+
+  .footer__email {
+    font-size: 16px;
+  }
+
+  .footer__social-media-icons {
+    gap: 53px;
+    max-width: 100%;
+  }
 }

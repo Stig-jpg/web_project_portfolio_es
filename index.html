@@ -29,11 +29,19 @@
             para crecer como desarrollador.
           </p>
           <div class="header__nav">
-            <a href="#header" class="header__nav-link">Descarga CV</a>
+            <a href="#header" class="header__nav-link"
+              >Descarga CV
+              <div class="header__nav-underline"></div
+            ></a>
             <a href="https://github.com/Stig-jpg" class="header__nav-link"
-              >Enlace a Github</a
-            >
-            <a href="#footer" class="header__nav-link">Hablemos</a>
+              >Enlace a Github
+              <div class="header__nav-underline"></div
+            ></a>
+
+            <a href="#footer" class="header__nav-link"
+              >Hablemos
+              <div class="header__nav-underline"></div
+            ></a>
           </div>
         </div>
 
@@ -46,7 +54,7 @@
           />
         </div>
       </div>
-      <section class="header__skils">
+      <section class="header__skills">
         <h3 class="header__title header__title--icons">
           Habilidades y herramientas
         </h3>
@@ -88,32 +96,30 @@
       <h4 class="main__title">Proyectos Destacados</h4>
 
       <div class="main__projects">
-        <div class="main__project-card">
-          <div class="main__thumbnail-wrapper">
+        <div class="project-card">
+          <div class="project-card__thumbnail-wrapper">
             <img
               src="/images/cofeeshop_project_img_compressed.png"
               alt="Proyecto de cafetería"
-              class="main__project-card__thumbnail"
+              class="project-card__thumbnail"
             />
-            <div class="main__project-card__icons">
+            <div class="project-card__tech-icons">
               <img
                 src="./images/html5_compressed.svg"
                 alt="Logo de HTML5"
-                class="main__project-card__icon"
+                class="project-card__tech-icon"
               />
               <img
                 src="./images/css3_compressed.svg"
                 alt="Logo de CSS3"
-                class="main__project-card__icon"
+                class="project-card__tech-icon"
               />
             </div>
           </div>
 
-          <div class="main__project-card__textbox">
-            <h4 class="main__project-card__title">
-              Página web de una cafetería
-            </h4>
-            <p class="main__project-card__description">
+          <div class="project-card__content">
+            <h4 class="project-card__title">Página web de una cafetería</h4>
+            <p class="project-card__description">
               Desarrollo de una landing page responsiva para una cafetería
               siguiendo un brief de diseño. Incluye estructura semántica,
               maquetación con Flexbox, creación de secciones nuevas y un
@@ -122,10 +128,10 @@
               buenas prácticas y publiqué la versión final utilizando GitHub
               Pages.
             </p>
-            <div class="main__card-links">
+            <div class="project-card__links">
               <a
                 href="./index.html"
-                class="main__card-link main__card-link--blue-text"
+                class="project-card__link project-card__link--blue"
               >
                 <img
                   src="./images/share-icon_compressed.svg"
@@ -136,12 +142,12 @@
 
               <a
                 href="./index.html"
-                class="main__card-link main__card-link--gray-text"
+                class="project-card__link project-card__link--gray"
               >
                 <img
                   src="./images/github_logo_compressed.svg"
                   alt=""
-                  class="main__card-link__icon main__card-link__icon--transparent"
+                  class="project-card__link-icon project-card__link-icon--transparent"
                 />
                 Github</a
               >
@@ -149,36 +155,34 @@
           </div>
         </div>
 
-        <div class="main__project-card">
-          <div class="main__thumbnail-wrapper">
+        <div class="project-card">
+          <div class="project-card__thumbnail-wrapper">
             <img
               src="/images/project_img_compressed.png"
               alt="Proyecto"
-              class="main__project-card__thumbnail"
+              class="project-card__thumbnail"
             />
-            <div class="main__project-card__icons">
+            <div class="project-card__tech-icons">
               <img
                 src="./images/js_logo_compressed.svg"
                 alt="Logo de HTML5"
-                class="main__project-card__icon"
+                class="project-card__tech-icon"
               />
               <img
                 src="./images/react_logo_compressed.svg"
                 alt="Logo de React"
-                class="main__project-card__icon"
+                class="project-card__tech-icon"
               />
             </div>
           </div>
 
-          <div class="main__project-card__textbox">
-            <h4 class="main__project-card__title">Mi Proyecto</h4>
-            <p class="main__project-card__description">
-              Descripción del proyecto
-            </p>
-            <div class="main__card-links">
+          <div class="project-card__content">
+            <h4 class="project-card__title">Mi Proyecto</h4>
+            <p class="project-card__description">Descripción del proyecto</p>
+            <div class="project-card__links">
               <a
                 href="./index.html"
-                class="main__card-link main__card-link--blue-text"
+                class="project-card__link project-card__link--blue"
               >
                 <img
                   src="./images/share-icon_compressed.svg"
@@ -189,12 +193,12 @@
 
               <a
                 href="./index.html"
-                class="main__card-link main__card-link--gray-text"
+                class="project-card__link project-card__link--gray"
               >
                 <img
                   src="./images/github_logo_compressed.svg"
                   alt=""
-                  class="main__card-link__icon main__card-link__icon--transparent"
+                  class="project-card__link-icon project-card__link-icon--transparent"
                 />
                 Github</a
               >
@@ -216,28 +220,28 @@
           <img
             src="./images/linkedin_logo_compressed.png"
             alt="Logo de LinkedIn"
-            class="footer__social-media__icon"
+            class="footer__social-icon"
           />
         </a>
         <a href="./index.html" class="footer__social-link">
           <img
             src="./images/facebook_logo_compressed.png"
             alt="Logo de Facebook"
-            class="footer__social-media__icon"
+            class="footer__social-icon"
           />
         </a>
         <a href="./index.html" class="footer__social-link">
           <img
             src="./images/instagram_logo_compressed.png"
             alt="Logo de Instagram"
-            class="footer__social-media__icon"
+            class="footer__social-icon"
           />
         </a>
         <a href="./index.html" class="footer__social-link">
           <img
             src="./images/x_logo_compressed.png"
             alt="Logo de X"
-            class="footer__social-media__icon"
+            class="footer__social-icon"
           />
         </a>
       </div>
