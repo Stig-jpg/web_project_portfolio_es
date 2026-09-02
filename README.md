@@ -1,53 +1,53 @@
-# Portafolio web
+# Web Portfolio
 
-Sitio web personal responsive creado para presentar mi perfil como desarrollador Full-Stack Junior, mis habilidades y proyectos destacados.
+Responsive personal website created to present my profile as a Junior Full-Stack Developer, my skills, and featured projects.
 
-## Características
+## Features
 
-- Diseño responsive para escritorio, tablet y móvil.
-- Sección de presentación profesional.
-- Lista de habilidades y herramientas.
-- Tarjetas de proyectos con tecnologías, descripción y enlaces.
-- Sección de contacto y redes sociales.
-- Organización de estilos con metodología BEM.
+- Responsive design for desktop, tablet, and mobile devices.
+- Professional introduction section.
+- Skills and tools list.
+- Project cards with technologies, descriptions, and links.
+- Contact and social media section.
+- BEM methodology for CSS organization.
 
-## Tecnologías
+## Technologies
 
 - HTML5
 - CSS3
 - Flexbox
 - CSS Grid
-- Metodología BEM
-- Git y GitHub
+- BEM methodology
+- Git and GitHub
 
-## Estructura del proyecto
+## Project Structure
 
 ```text
-├── images/       # Imágenes e íconos
-├── fonts/        # Tipografías locales
-├── styles/       # Estilos por sección
-├── vendor/       # Archivos de terceros
-├── index.html    # Página principal
+├── images/       # Images and icons
+├── fonts/        # Local fonts
+├── styles/       # Section styles
+├── vendor/       # Third-party files
+├── index.html    # Main page
 └── README.md
 ```
 
-## Diseño responsive
+## Responsive Design
 
-El sitio se adapta a distintos tamaños de pantalla:
+The website adapts to different screen sizes:
 
-- Escritorio: tarjetas de proyectos en dos columnas.
-- Tablet: tarjetas con ancho máximo de 688px.
-- Móvil: diseño optimizado para 320px de ancho.
+- Desktop: project cards displayed in two columns.
+- Tablet: project cards with a maximum width of 688px.
+- Mobile: design optimized for a 320px-wide viewport.
 
-## Demo
+## Live Demo
 
-[Ver demo en vivo](URL_DE_TU_GITHUB_PAGES)
+[View live demo](URL_DE_TU_GITHUB_PAGES)
 
-## Repositorio
+## Repository
 
-[Ver código en GitHub](https://github.com/Stig-jpg/web_project_portfolio_es)
+[View the code on GitHub](https://github.com/Stig-jpg/web_project_portfolio_es)
 
-## Autor
+## Author
 
 Fernando Godínez<br>
 [GitHub](https://github.com/Stig-jpg)
