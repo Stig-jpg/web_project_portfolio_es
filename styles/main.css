@@ -173,7 +173,14 @@
   }
 
   .project-card {
-    width: 100%;
+    width: 688px;
+    max-width: 100%;
+  }
+
+  .project-card__thumbnail-wrapper,
+  .project-card__thumbnail {
+    width: 688px;
+    max-width: 100%;
   }
 }
 
