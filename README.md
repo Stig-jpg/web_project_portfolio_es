@@ -41,7 +41,7 @@ The website adapts to different screen sizes:
 
 ## Live Demo
 
-[View live demo](URL_DE_TU_GITHUB_PAGES)
+[View live demo](stig-jpg.github.io)
 
 ## Repository
 
